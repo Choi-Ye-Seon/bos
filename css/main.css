@@ -1005,7 +1005,6 @@ header .header__btnBox .login {
     cursor: default;
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid var(--border-color);
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-position: 30px 30px;
