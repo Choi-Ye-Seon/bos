@@ -32,25 +32,76 @@ function hide() {
 
 }
 
-// Intersection show/hide 효과
-const io = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (!entry.isIntersecting) {
-            return
-        }
-        entry.target.classList.add('show');
-    });
+
+
+// ScrollMagic
+const spyEls = document.querySelectorAll('.scroll-spy');
+
+spyEls.forEach(function(spyEl) {
+
+    let scene = new ScrollMagic
+        .Scene({
+            triggerElement: spyEl,
+            triggerHook: .8
+        })
+        .on('enter', function() {
+            spyEl.classList.add('show');
+            fadeIn();
+        })
+        .on('leave', function() {
+            spyEl.classList.remove('show');
+            fadeOut();
+
+
+        })
+        .addTo(new ScrollMagic.Controller());
 });
 
-const showEls = document.querySelectorAll('.els');
-showEls.forEach(function(el) {
-    io.observe(el);
+
+
+// Fade-in 효과 함수선언
+const fadeEls = document.querySelectorAll('.about .problem .fade-in');
+
+function fadeIn() {
+    fadeEls.forEach(function(fadeEl, index) {
+        gsap.to(fadeEl, .5, {
+            opacity: 1,
+            delay: (index + 1) * .4
+        });
+
+    });
+}
+
+function fadeOut() {
+    fadeEls.forEach(function(fadeEl, index) {
+        gsap.killTweensOf(fadeEl); // 진행 중인 애니메이션 중지
+
+    });
+}
+
+
+
+
+
+// About solution Swiper
+new Swiper('.about .solution .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    loop: true,
+    autoplay: true,
+    breakpoints: {
+        430: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+        }
+    }
 });
 
 // Design Swiper
 new Swiper('.design .swiper', {
     slidesPerView: "auto",
-    // spaceBetween: 80,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -69,8 +120,40 @@ new Swiper('.design .swiper', {
 
 // Start-guide Grap Swiper
 new Swiper('.start-guide .swiper', {
-    slidesPerView: "auto",
-    // centeredSlides: true,
-    // spaceBetween: 30,
-    grabCursor: true
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    pagination: {
+        el: '.start-guide .swiper-pagination',
+        clickable: true
+    },
+
+    breakpoints: {
+        640: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+        }
+    }
 });
+
+const slideEls = document.querySelectorAll('section.start-guide .swiper-slide');
+
+slideEls.forEach(function(slideEl) {
+    slideEl.addEventListener('mouseenter', function() {
+        slideEl.classList.add('hover');
+
+        slideEls.forEach(function(sibling) {
+            if (sibling !== slideEl) {
+                sibling.classList.remove('hover');
+            }
+        });
+
+    });
+
+});
+
+
+//  Alert 
+function notice() {
+    alert("현재 준비 중 입니다. 정식 버전을 기대해 주세요!")
+}

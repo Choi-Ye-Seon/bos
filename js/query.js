@@ -53,12 +53,9 @@ $(document).ready(function() {
         }
     });
 
-    // ul.sub-menu 클릭 시 이벤트 전파를 막아 상위 메뉴가 닫히지 않도록 함
+
     $(".user-guide ul.answer").click(function(event) {
         event.stopPropagation();
     });
-
-
-
 
 });
