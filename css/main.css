@@ -676,6 +676,7 @@ header .header__btnBox .login {
 
 .about .solution ul.dot {
     padding-top: 40px;
+    padding-bottom: 70px;
 }
 
 .about .solution ul.dot li.large {
@@ -707,10 +708,6 @@ header .header__btnBox .login {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1E3C72;
-}
-
-.about .solution .swiper {
-    padding-top: 80px;
 }
 
 .about .solution .swiper-slide {
@@ -783,8 +780,12 @@ header .header__btnBox .login {
     .about {
         padding-top: 140px;
     }
+    .about ul.dot {
+        gap: 30px;
+    }
     .about .problem .container {
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 60px;
     }
     .about .problem .container .itemBox .thumbBox img {
         width: 160px;
@@ -795,6 +796,9 @@ header .header__btnBox .login {
     .about .solution .swiper-slide .icon {
         width: 74px;
         height: 74px;
+    }
+    .about .solution ul.dot {
+        padding-bottom: 50px;
     }
     .about .solution .swiper-slide .icon img {
         width: 40px;
@@ -808,6 +812,12 @@ header .header__btnBox .login {
     .about .solution .swiper-slide {
         max-width: none;
         aspect-ratio: 0;
+    }
+    .about .problem ul.dot {
+        display: none;
+    }
+    .about .solution ul.dot {
+        padding-top: 0;
     }
 }
 
@@ -1293,6 +1303,9 @@ header .header__btnBox .login {
 }
 
 @media (max-width:640px) {
+    .start-guide {
+        padding: 100px 0;
+    }
     .start-guide .swiper-slide {
         max-width: none;
         width: 100%;
