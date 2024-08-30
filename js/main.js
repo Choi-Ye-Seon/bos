@@ -4,7 +4,7 @@ const cloneMenuEl = document.querySelector('header .clone-menu');
 const menuBarEl = cloneMenuEl.querySelector('.menu-bar');
 const closeBtnEl = cloneMenuEl.querySelector('.btn--close');
 
-menuStarterEl.addEventListener('click', function() {
+menuStarterEl.addEventListener('click', function () {
     if (cloneMenuEl.classList.contains('on')) {
         hide()
     } else {
@@ -12,14 +12,14 @@ menuStarterEl.addEventListener('click', function() {
     }
 });
 
-closeBtnEl.addEventListener('click', function() {
+closeBtnEl.addEventListener('click', function () {
     hide()
 });
-menuBarEl.addEventListener('click', function(event) {
+menuBarEl.addEventListener('click', function (event) {
     event.stopPropagation()
 });
 
-cloneMenuEl.addEventListener('click', function() {
+cloneMenuEl.addEventListener('click', function () {
     hide()
 });
 
@@ -37,18 +37,18 @@ function hide() {
 // ScrollMagic
 const spyEls = document.querySelectorAll('.scroll-spy');
 
-spyEls.forEach(function(spyEl) {
+spyEls.forEach(function (spyEl) {
 
     let scene = new ScrollMagic
         .Scene({
             triggerElement: spyEl,
             triggerHook: .8
         })
-        .on('enter', function() {
+        .on('enter', function () {
             spyEl.classList.add('show');
             fadeIn();
         })
-        .on('leave', function() {
+        .on('leave', function () {
             spyEl.classList.remove('show');
             fadeOut();
 
@@ -63,7 +63,7 @@ spyEls.forEach(function(spyEl) {
 const fadeEls = document.querySelectorAll('.about .problem .fade-in');
 
 function fadeIn() {
-    fadeEls.forEach(function(fadeEl, index) {
+    fadeEls.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, .5, {
             opacity: 1,
             delay: (index + 1) * .4
@@ -73,7 +73,7 @@ function fadeIn() {
 }
 
 function fadeOut() {
-    fadeEls.forEach(function(fadeEl, index) {
+    fadeEls.forEach(function (fadeEl, index) {
         gsap.killTweensOf(fadeEl); // 진행 중인 애니메이션 중지
 
     });
@@ -88,7 +88,7 @@ new Swiper('.about .solution .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
     grabCursor: true,
-
+    autoHeight: true,
     loop: true,
     autoplay: true,
     breakpoints: {
@@ -123,6 +123,7 @@ new Swiper('.start-guide .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
     grabCursor: true,
+    autoHeight: true,
     pagination: {
         el: '.start-guide .swiper-pagination',
         clickable: true
@@ -138,11 +139,11 @@ new Swiper('.start-guide .swiper', {
 
 const slideEls = document.querySelectorAll('section.start-guide .swiper-slide');
 
-slideEls.forEach(function(slideEl) {
-    slideEl.addEventListener('mouseenter', function() {
+slideEls.forEach(function (slideEl) {
+    slideEl.addEventListener('mouseenter', function () {
         slideEl.classList.add('hover');
 
-        slideEls.forEach(function(sibling) {
+        slideEls.forEach(function (sibling) {
             if (sibling !== slideEl) {
                 sibling.classList.remove('hover');
             }

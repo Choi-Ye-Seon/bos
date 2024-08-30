@@ -91,15 +91,19 @@ section {
     html {
         font-size: 15px;
     }
+
     section {
         padding: 90px 0 100px;
     }
+
     .titleBox {
         padding-bottom: 50px;
     }
+
     .title {
         font-size: 18px;
     }
+
     .title--large {
         font-size: 32px;
     }
@@ -155,10 +159,12 @@ section {
     .btn--blue {
         font-size: 17px;
     }
+
     .btn--more {
         font-size: 16px;
         padding: 18px 40px;
     }
+
     .btnBox {
         padding-top: 60px;
     }
@@ -284,14 +290,17 @@ header .header__btnBox .login {
     header .inner {
         justify-content: space-between;
     }
+
     header .clone-menu ul.sub-menu {
         display: none;
     }
+
     header .menu-starter {
         display: block;
         padding: 20px 20px 20px 0;
         cursor: pointer;
     }
+
     header .menu-starter span {
         display: block;
         width: 20px;
@@ -300,15 +309,19 @@ header .header__btnBox .login {
         margin-bottom: 6px;
         transition: .4s;
     }
+
     header .menu-starter span:last-child {
         margin-bottom: 0;
     }
+
     header ul.menuWrap {
         display: none;
     }
+
     header .header__btnBox {
         flex-grow: 1;
     }
+
     /* 클론메뉴바 */
     header .clone-menu {
         display: block;
@@ -321,6 +334,7 @@ header .header__btnBox .login {
         opacity: 0;
         transition: .3s;
     }
+
     header .clone-menu::before {
         content: '';
         width: 100%;
@@ -330,6 +344,7 @@ header .header__btnBox .login {
         top: 0;
         left: 0;
     }
+
     header .clone-menu .menu-bar {
         width: 300px;
         height: 100vh;
@@ -339,15 +354,18 @@ header .header__btnBox .login {
         box-sizing: border-box;
         transition: .3s;
     }
+
     header .clone-menu .menu-bar .logo {
         display: flex;
         justify-content: center;
         padding-right: 0;
         transform: scale(.8);
     }
+
     header .clone-menu .menu-bar__list {
         padding: 25px 0;
     }
+
     header .clone-menu .menu-bar__list>li.main-menu>a {
         display: flex;
         justify-content: space-between;
@@ -355,11 +373,13 @@ header .header__btnBox .login {
         color: var(--font-main);
         font-weight: 500;
     }
+
     header .clone-menu .menu-bar__list>li.main-menu>a .arrow {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     header .clone-menu .menu-bar__list>li.main-menu>a .arrow span {
         display: inline-block;
         width: 10px;
@@ -367,33 +387,41 @@ header .header__btnBox .login {
         background-color: var(--border-color);
         transition: .1s;
     }
+
     header .clone-menu .menu-bar__list>li.main-menu>a .arrow span:first-child {
         transform: rotate(45deg) translate(1.3px, -1.5px);
     }
+
     header .clone-menu .menu-bar__list>li.main-menu>a .arrow span:last-child {
         transform: rotate(-45deg) translate(-1.3px, -1.5px);
     }
+
     header .clone-menu .menu-bar__list>li.main-menu.show>a .arrow span:first-child {
         transform: rotate(-45deg) translate(1.3px, 1.5px);
     }
+
     header .clone-menu .menu-bar__list>li.main-menu.show>a .arrow span:last-child {
         transform: rotate(45deg) translate(-1.3px, 1.5px);
     }
+
     header .clone-menu ul.sub-menu>li>a {
         display: block;
         padding: 12px 7px;
         font-size: 14px;
         color: #666;
     }
+
     header .clone-menu ul.sub-menu>li:first-child>a {
         padding-top: 9px;
     }
+
     header .clone-menu .menu-bar__btnBox {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
     }
+
     header .clone-menu .bos-starter,
     header .clone-menu .login {
         width: 100%;
@@ -407,14 +435,17 @@ header .header__btnBox .login {
         text-align: center;
         border-radius: 5px;
     }
+
     header .clone-menu .bos-starter {
         color: var(--font-white);
         background-color: #3060f6;
     }
+
     header .clone-menu .login {
         border: 1px solid var(--border-color);
         background-color: #fff;
     }
+
     header .clone-menu .btn--close {
         display: flex;
         flex-direction: column;
@@ -430,6 +461,7 @@ header .header__btnBox .login {
         right: -43px;
         background-color: transparent;
     }
+
     header .clone-menu .btn--close span {
         display: block;
         width: 20px;
@@ -437,16 +469,20 @@ header .header__btnBox .login {
         background-color: #f6f6f6;
         margin-bottom: 6px;
     }
+
     header .clone-menu .btn--close span:first-child {
         transform: translate(0, 4px) rotate(45deg);
     }
+
     header .clone-menu .btn--close span:last-child {
         transform: translate(0, -4px) rotate(-45deg);
     }
+
     header .clone-menu.on {
         visibility: visible;
         opacity: 1;
     }
+
     header .clone-menu.on .menu-bar {
         transform: translateX(0px);
     }
@@ -462,6 +498,7 @@ header .header__btnBox .login {
     header .header__btnBox .login {
         display: none;
     }
+
     header .header__btnBox {
         flex-shrink: 0;
     }
@@ -548,21 +585,26 @@ header .header__btnBox .login {
     .visual {
         padding: calc(var(--header-menuheight) + 80px) 0 20px;
     }
+
     .visual .inner {
         flex-direction: column;
         align-items: center;
     }
+
     .visual .textBox {
         text-align: center;
         padding-bottom: 60px;
     }
+
     .visual .textBox p.title {
         text-align: center;
     }
+
     .visual .imgBox {
         position: static;
         max-width: 470px;
     }
+
     .visual .imgBox img {
         width: 100%;
     }
@@ -572,14 +614,17 @@ header .header__btnBox .login {
     .visual .textBox {
         padding-bottom: 50px;
     }
+
     .visual .textBox .sub-title {
         font-size: 20px;
         padding-bottom: 10px;
     }
+
     .visual .textBox p.title {
         font-size: 34px;
         padding-bottom: 22px;
     }
+
     .visual .textBox p.description {
         font-size: 17px;
         padding-bottom: 26px;
@@ -590,11 +635,13 @@ header .header__btnBox .login {
     .visual .textBox .sub-title {
         font-size: 18px;
     }
+
     .visual .textBox p.title {
         font-size: 28px;
         padding-bottom: 20px;
         word-break: keep-all;
     }
+
     .visual .textBox p.description {
         font-size: 16px;
         word-break: keep-all;
@@ -606,6 +653,7 @@ header .header__btnBox .login {
         top: -6px;
         /* transform: translateY(-6px); */
     }
+
     100% {
         top: -12px;
     }
@@ -771,6 +819,7 @@ header .header__btnBox .login {
         place-items: center;
         grid-gap: 60px 40px;
     }
+
     .about .problem .container .itemBox .thumbBox img {
         width: 180px;
     }
@@ -780,29 +829,37 @@ header .header__btnBox .login {
     .about {
         padding-top: 140px;
     }
+
     .about ul.dot {
         gap: 30px;
     }
+
     .about .problem .container {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 60px;
     }
+
     .about .problem .container .itemBox .thumbBox img {
         width: 160px;
     }
+
     .about .problem .container .itemBox .textBox {
         margin-top: -39px;
     }
+
     .about .solution .swiper-slide .icon {
         width: 74px;
         height: 74px;
     }
+
     .about .solution ul.dot {
         padding-bottom: 50px;
     }
+
     .about .solution .swiper-slide .icon img {
         width: 40px;
     }
+
     .about .solution .swiper-slide h3 {
         font-size: 18px;
     }
@@ -813,9 +870,11 @@ header .header__btnBox .login {
         max-width: none;
         aspect-ratio: 0;
     }
+
     .about .problem ul.dot {
         display: none;
     }
+
     .about .solution ul.dot {
         padding-top: 0;
     }
@@ -970,34 +1029,42 @@ header .header__btnBox .login {
         max-width: 590px;
         padding: 0 10px;
     }
+
     .design .swiper-wrapper {
         padding-bottom: calc(50px + 15px);
     }
+
     .design .design-controller {
         display: none;
     }
+
     .design .swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: 0;
     }
+
     .design .swiper-pagination-bullet {
         opacity: .15;
         width: 12px;
         height: 12px;
     }
+
     .design .swiper-pagination-bullet-active {
         opacity: 1;
         width: 30px;
         border-radius: 50px;
         background-color: #2543C0;
     }
+
     .start-guide .swiper-pagination-bullet-active {
         width: 30px;
         border-radius: 50px;
         background-color: #2543C0;
     }
+
     .design .swiper-pagination {
         display: block;
     }
+
     .design .design-controller {
         display: none;
     }
@@ -1007,6 +1074,7 @@ header .header__btnBox .login {
     .design .design-info .category {
         font-size: 13px;
     }
+
     .design .design-info .name {
         font-size: 14px;
     }
@@ -1096,27 +1164,33 @@ header .header__btnBox .login {
     .function .title--large {
         padding-bottom: 50px;
     }
+
     .function .fnWrap {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
+
     .function .fnWrap .fnBox {
         padding: 25px 20px;
         display: flex;
         align-items: center;
         gap: 20px;
     }
+
     .function .fnWrap .fnBox img {
         transform: scale(.86);
         padding-bottom: 0;
     }
+
     .function .fnWrap .fnBox h3 {
         font-size: 18px;
         padding-bottom: 8px;
     }
+
     .function .fnWrap .fnBox p.description {
         font-size: 15px;
     }
+
     .function .fnWrap .fnBox.fn-more a {
         padding: 25px 30px 25px 20px;
         box-sizing: border-box;
@@ -1306,19 +1380,24 @@ header .header__btnBox .login {
     .start-guide {
         padding: 100px 0;
     }
+
     .start-guide .swiper-slide {
         max-width: none;
         width: 100%;
     }
+
     .start-guide .swiper-slide.hover {
         max-width: none;
     }
+
     .start-guide .stepBox .textBox .description {
         display: block;
     }
+
     .start-guide .stepBox .textBox {
         background-image: none;
     }
+
     .start-guide .stepBox .textBox .guide {
         opacity: 1;
         visibility: visible;
@@ -1426,6 +1505,7 @@ header .header__btnBox .login {
         padding: 24px 30px 24px 80px;
         background-position: 30px center;
     }
+
     .user-guide ul.answer {
         padding: 30px 30px 30px 80px;
         background-position: 30px 24px;
@@ -1436,6 +1516,7 @@ header .header__btnBox .login {
     .user-guide {
         padding-top: 100px;
     }
+
     .user-guide li.question>p {
         padding: 24px 20px 24px 70px;
         font-size: 16px;
@@ -1443,21 +1524,27 @@ header .header__btnBox .login {
         gap: 10px;
         word-break: keep-all;
     }
+
     .user-guide li.question>p .arrow span {
         width: 10px;
     }
+
     .user-guide li.question>p .arrow span:first-child {
         transform: rotate(45deg) translate(1.3px, -1.5px);
     }
+
     .user-guide li.question>p .arrow span:last-child {
         transform: rotate(-45deg) translate(-1.3px, -1.5px);
     }
+
     .user-guide li.question.show>p .arrow span:first-child {
         transform: rotate(-45deg) translate(1.3px, 1.5px);
     }
+
     .user-guide li.question.show>p .arrow span:last-child {
         transform: rotate(45deg) translate(-1.3px, 1.5px);
     }
+
     .user-guide ul.answer {
         padding: 30px 20px 30px 70px;
         background-position: 20px 24px;
@@ -1521,17 +1608,21 @@ header .header__btnBox .login {
     .video-guide {
         padding: 70px 0 80px;
     }
+
     .video-guide .titleBox .title--large {
         word-break: keep-all;
     }
+
     .video-guide .titleBox .title {
         font-size: 16px;
         line-height: 1.4;
         word-break: keep-all;
     }
+
     .video-guide .btnBox {
         gap: 30px;
     }
+
     .video-guide .btnBox a {
         font-size: 16px;
     }
@@ -1541,6 +1632,7 @@ header .header__btnBox .login {
     .video-guide .btnBox {
         gap: 20px;
     }
+
     .video-guide .btnBox a {
         font-size: 15px;
     }
@@ -1571,6 +1663,7 @@ footer .footer-menu {
 
 footer .footer-menu>ul.menu {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -1615,6 +1708,8 @@ footer .site-info span {
     font-size: 13px;
     color: var(--font-white);
 }
+
+
 
 footer .site-info span {
     position: relative;
@@ -1662,6 +1757,31 @@ footer .service-center p {
     font-size: 13px;
     letter-spacing: -0.5px;
     line-height: 1.5;
+    word-break: keep-all;
+}
+
+footer .service-center p.contact span {
+    position: relative;
+    padding: 0 8px;
+}
+
+footer .service-center p.contact span::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 8px;
+    background-color: var(--border-color);
+}
+
+footer .service-center p.contact span:first-child {
+    padding-left: 0;
+}
+
+footer .service-center p.contact span:last-child:after {
+    display: none;
 }
 
 footer .service-center p.notice {
@@ -1672,21 +1792,66 @@ footer .service-center p.notice a {
     color: #3fa8f3;
 }
 
-@media (max-width:690px) {
+@media (max-width:900px) {
+    footer {
+        padding-top: 30px;
+    }
+
     footer .footer-menu {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        gap: 30px;
     }
+
     footer .footer-menu>ul.menu {
         line-height: 1.4;
+        gap: 10px 16px;
     }
+
+    footer .footer-menu>ul.menu li::before {
+        display: none;
+    }
+
+    footer .footer-menu>ul.menu li a {
+        padding: 0;
+    }
+
     footer .logo img {
-        display: none;
+        width: 76px;
     }
-    footer .site-info br.hidden {
-        display: none;
+
+    footer .site-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     footer .site-info p {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    footer .service-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    footer .site-info p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .site-info span {
+        text-align: center;
+    }
+
+    footer .site-info span::after {
+        display: none;
     }
 }
